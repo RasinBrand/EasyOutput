@@ -12,7 +12,7 @@ from EasyOutput.EasyOutput import *
 \
 ![PyPI - Downloads](https://img.shields.io/pypi/dd/EasyOutput?style=for-the-badge&logo=pypi)
 \
-![GitHub commit activity](https://img.shields.io/github/commit-activity/m/FrankAustin808/EasyOutput?style=for-the-badge&logo=github)\
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/RasinBrand/EasyOutput?style=for-the-badge&logo=github)\
 ![easyoutput](https://i.gyazo.com/e8c1bb4fe08ade9c2ce6856386f48e1f.png)
 
 > [!IMPORTANT]
