@@ -8,7 +8,6 @@ brighten = Style.BRIGHT
 dim_message = Style.DIM
 
 class Colors:
-    
     def Show():
         """
         Shows all available colors 
@@ -50,7 +49,28 @@ class Colors:
 
 
 class Highlights:
-    none = ""
+    def Show():
+        """
+        Shows all available highlight colors 
+        """
+        Title_Print("All Colors", color=Colors.Cyan)
+        Colored_Message("Red", color=Colors.Red)
+        Colored_Message("Light Red", color=Colors.Light_Red)
+        Colored_Message("Green", color=Colors.Green)
+        Colored_Message("Light Green", color=Colors.Light_Green)
+        Colored_Message("Blue", color=Colors.Blue)
+        Colored_Message("Light Blue", color=Colors.Light_Blue)
+        Colored_Message("Black", color=Colors.Black)
+        Colored_Message("Light Black", color=Colors.Light_Black)
+        Colored_Message("Yellow", color=Colors.Yellow)
+        Colored_Message("Light Yellow", color=Colors.Light_Yellow)
+        Colored_Message("Cyan", color=Colors.Cyan)
+        Colored_Message("Light Cyan", color=Colors.Light_Cyan)
+        Colored_Message("White", color=Colors.White)
+        Colored_Message("Light White", color=Colors.Light_White)
+        Colored_Message("Magenta", color=Colors.Magenta)
+        Colored_Message("Light Magenta", color=Colors.Light_Magenta)
+        
     Red = bg.RED
     Green = bg.GREEN
     Blue = bg.BLUE
@@ -71,122 +91,122 @@ class Highlights:
 
 def Info_Message(message, color: Colors = Colors.White, highlight: Highlights = '', title_color: Colors = Colors.Blue):  
     """
-    Prints a message notifying the user of specific need to know information.
+    This function prints out an informational message.
     
-    color
-        Color your message! The standard is set to white.
+    color: color your direct message a specific color, default is white.
     
-    highlight
-        Blue
+    highlight: highlight the message in a specific color!
+    
+    title_color: Color the title of the message, default is blue.
     """
     print(f"{title_color + brighten}Info{reset}: {highlight + color + message + reset}")
     
 def Error_Message(message, color: Colors = Colors.White, highlight: Highlights = '', title_color: Colors = Colors.Red):
     """
-    Prints a message notifying the user of an error.
+    This function prints out an error message.
     
-    colo
-        Color your message! The standard is set to white.
+    color: color your direct message a specific color, default is white.
     
-    highlight
-        Red
+    highlight: highlight the message in a specific color!
+    
+    title_color: Color the title of the message, default is red.
     """
     print(f"{title_color}Error{reset}: {highlight + color + message + reset}")
 
     
 def Connection_Error_Message(message, color: Colors = Colors.White, highlight: Highlights = '', title_color: Colors = Colors.Red):
     """
-    Prints a message notifying the user of a connection error.
+    This function prints out a failed connection message.
     
-    colo
-        Color your message! The standard is set to white.
+    color: color your direct message a specific color, default is white.
     
-    highlight
-        Red
+    highlight: highlight the message in a specific color!
+    
+    title_color: Color the title of the message, default is red.
     """
     print(f"{title_color}Connection Error{reset}: {highlight + color +  message + reset}")
     
 def Success_Message(message, color: Colors = Colors.White, highlight: Highlights = '', title_color: Colors = Colors.Green):
     """
-    Prints a message notifying the user of a success.
+    This function prints out a success message.
     
-    color:
-        Color your message! The standard is set to white.
+    color: color your direct message a specific color, default is white.
     
-    highlight
-        Green
+    highlight: highlight the message in a specific color!
+    
+    title_color: Color the title of the message, default is green.
     """
     print(f"{title_color + brighten}Success{reset}: {highlight + color + message + reset}")
     
 def Successful_Connection_Message(message, color: Colors = Colors.White, highlight: Highlights = '', title_color: Colors = Colors.Green):
     """
-    Prints a message notifying the user of a successful connection.
+    This function prints out a successful connection message.
     
-    color:
-        Color your message! The standard is set to white.
+    color: color your direct message a specific color, default is white.
     
-    highlight
-        Green
+    highlight: highlight the message in a specific color!
+    
+    title_color: Color the title of the message, default is green.
     """
     print(f"{title_color + brighten}Successful Connection{reset}: {highlight + color + message + reset}")
     
 def Note_Message(message, color: Colors = Colors.White, highlight: Highlights = '', title_color: Colors = Colors.Yellow):
     """
-    Prints a note notifying the user of something they should be made aware of.
+    This function prints out something the user should take note of.
     
-    color: 
-        Color your message! The standard is set to white.
+    color: color your direct message a specific color, default is white.
     
-    highlight
-        Yellow
+    highlight: highlight the message in a specific color!
+    
+    title_color: Color the title of the message, default is yellow.
     """
     print(f"{title_color}Note{reset}: {highlight + color +  message + reset}")
     
 def Warning_Message(message, color: Colors = Colors.White, highlight: Highlights = '', title_color: Colors = Colors.Yellow):
     """
-    Prints a warning message for the user indicating your code is running.
+    This function prints out a warning message.
     
-    color: 
-        Color your message! The standard is set to white.
+    color: color your direct message a specific color, default is white.
     
-    highlight
-        Yellow
+    highlight: highlight the message in a specific color!
+    
+    title_color: Color the title of the message, default is yellow.
     """
     print(f"{title_color}Warning{reset}: {highlight + color +  message + reset}")    
 
     
 def Title_Print(title, color: Colors = Colors.Green, highlight: Highlights = ''):
     """
-    Prints a title for grouping lists and anything else you can think of.
+    This function prtins out a title.
     
-    color:
-        Color your message! The standard is set to green.
+    color: color your direct message a specific color, default is green.
     
-    highlight
-        Green
+    highlight: highlight the message in a specific color!
     """
     print(f"=== {highlight + color + brighten + title + reset} ===")    
 
      
 def Redacted_Message(message, color: Colors = Colors.White, highlight: Highlights = '', title_color: Colors = Colors.Red):
     """
-    Prints redacted message 
+    This function prints out a redacted message.
     
-    color:
-        Color your message! The standard is set to white.
+        The use of this is un-realistic, i just made it for fun.
     
-    highlight
-        Red
+    color: color your direct message a specific color, default is white.
+    
+    highlight: highlight the message in a specific color!
+    
+    title_color: Color the title of the message, default is yellow.
     """
     print(f"{title_color}REDACTED{reset}: {highlight + color + message + reset}")    
 
 
 def Colored_Message(message, color: Colors = Colors.White, highlight: Highlights = ''):
     """
-    Prints user written message!
+    This function allows you to print out your own colored message with ease!
     
-    color:
-        Color your message! The standard is set to white.
-
+    color: color your direct message a specific color, default is white.
+    
+    highlight: highlight the message in a specific color!
     """
     print(highlight + color + message + reset)
